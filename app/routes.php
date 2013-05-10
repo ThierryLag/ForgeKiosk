@@ -13,5 +13,6 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+	return View::make('home', array('varTest' => 'Une variable'));
+	//return View::make('hello');
 });
