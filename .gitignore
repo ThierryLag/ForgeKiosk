@@ -4,7 +4,7 @@ composer.phar
 composer.lock
 .DS_Store
 *.sublime*
-storage/views/*
-storage/cache/*
-storage/logs/*
-storage/sessions/*
+app/storage/views/*
+app/storage/cache/*
+app/storage/logs/*
+app/storage/sessions/*
