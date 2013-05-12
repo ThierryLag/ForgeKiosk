@@ -11,4 +11,10 @@
 /**
  *  Frontend
  */
-Route::get('/', array('as' => 'homepage', 'uses' => 'HomeController@welcome'));
+Route::get('/', array('as' => 'homepage', 'uses' => 'Frontend\HomeController@welcome'));
+
+
+/**
+ *  Backoffice
+ */
+Route::get('/admin/users', 'Backoffice\UsersController@getList');

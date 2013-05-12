@@ -7,6 +7,11 @@
  * @since       May 2013
  */
 // ====================================================================================================================
+namespace Frontend;
+
+use BaseController, View;
+
+// --------------------------------------------------------------------------------------------------------------------
 
 class HomeController extends BaseController
 {
@@ -17,5 +22,4 @@ class HomeController extends BaseController
 	{
 		return View::make('home.welcome');
 	}
-
 }
