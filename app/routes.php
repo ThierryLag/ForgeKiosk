@@ -1,18 +1,14 @@
 <?php
+/**
+ *  Routes definition
+ *
+ * @author      Thierry 'Akarun' Lagasse <thierry@passtech.be>
+ * @copyright   Copyright (c) 2013 Passtech.be - Thierry Lagasse (http://www.passtech.be)
+ * @since       May 2013
+ */
+// ====================================================================================================================
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
-*/
-
-Route::get('/', function()
-{
-	return View::make('home', array('varTest' => 'Une variable'));
-	//return View::make('hello');
-});
+/**
+ *  Frontend
+ */
+Route::get('/', array('as' => 'homepage', 'uses' => 'HomeController@welcome'));
